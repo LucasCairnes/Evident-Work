@@ -19,7 +19,7 @@ Asynchronously scrapes upcoming event data from MarketScreener calendar links st
 - Uploads the raw events to `evident-data-dev.raw_marketscreener.events` in BigQuery.
 
 ---
-
+    
 ### `post_processing.py`
 
 **Purpose:**  
