@@ -6,7 +6,6 @@ import json
 from typing import Literal
 from google.cloud import bigquery
 from datetime import datetime, timedelta
-from src.news_package.data.newsapi import login_eventregistry, fetch_company_concepts_list, article_search_and_return_list_of_dicts, refresh_source_uri_tbl_in_bigquery
 
 
 class ByteIngestion(object):
