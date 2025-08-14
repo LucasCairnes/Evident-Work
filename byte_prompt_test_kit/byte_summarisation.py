@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from LLM_summarisation.summarise import GeminiArticleSummariser
-from LLM_summarisation.summary_prompts import get_summary_prompt
+from summary_prompts import get_summary_prompt
 
 # Notes: need to input a df called articles -> check what columns are needed
 # Need to change where the files get outputted to

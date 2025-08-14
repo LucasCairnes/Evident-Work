@@ -1,5 +1,5 @@
 from datetime import datetime
-from workflows_byte.summarisation import ByteSummarisation
+from workflows_byte.summarisation import *
 
 def run_byte_workflow(sector):
     workflow = ByteSummarisation(sector=sector,
