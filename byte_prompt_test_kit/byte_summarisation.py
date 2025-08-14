@@ -7,7 +7,7 @@ import asyncio
 from dotenv import load_dotenv
 load_dotenv()
 
-from LLM_summarisation.summarise import GeminiArticleSummariser
+from gemini_summariser import GeminiArticleSummariser
 from summary_prompts import get_summary_prompt
 
 # Notes: need to input a df called articles -> check what columns are needed
@@ -29,7 +29,7 @@ class ByteSummarisation(object):
 
     def trigger_workflow(self):
 
-        articles = pd.read_excel("lucas_prompt_testing/input_output/summarisation_test_input.xlsx")
+        articles = pd.read_excel("input_output/articles_input.xlsx")
         articles["run_datetime"] = datetime.now()
 
         print(f"Number Of Articles: {articles.shape[0]}")
