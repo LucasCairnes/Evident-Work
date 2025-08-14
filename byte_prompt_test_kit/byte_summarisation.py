@@ -1,17 +1,11 @@
-import os
 import pandas as pd 
-from typing import Literal, Optional
-from google.cloud import bigquery
-from datetime import datetime, timedelta
+from typing import Literal
 import asyncio
 from dotenv import load_dotenv
 load_dotenv()
 
 from gemini_summariser import GeminiArticleSummariser
 from summary_prompts import get_summary_prompt
-
-# Notes: need to input a df called articles -> check what columns are needed
-# Need to change where the files get outputted to
 
 class ByteSummarisation(object):
     def __init__(self,
@@ -30,17 +24,15 @@ class ByteSummarisation(object):
     def trigger_workflow(self):
 
         articles = pd.read_excel("input_output/articles_input.xlsx")
-        articles["run_datetime"] = datetime.now()
+        articles['date_published'] = articles['date_published'].dt.strftime('%d-%b-%Y')
+
 
         print(f"Number Of Articles: {articles.shape[0]}")
 
         # summarise
         summaries = asyncio.run(self.summarise(articles=articles))
         articles['summary'] = summaries
-    
-        # Ensure proper dtypes before upload
-        articles["dateTimePub"] = pd.to_datetime(articles["dateTimePub"], errors="coerce")
-        articles["run_datetime"] = pd.to_datetime(articles["run_datetime"], errors="coerce")
+
         # reorder cols 
-        articles = articles[["temp_id", "url", "title", "body", "source_name", "dateTimePub", "pillar"]]
+        articles = articles[["url", "title", "body", "source_name", "date_published", "pillar", "summary"]]
         return articles

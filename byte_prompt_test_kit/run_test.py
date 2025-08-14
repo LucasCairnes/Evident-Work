@@ -14,7 +14,7 @@ def main():
     
     for sector in sectors:
         articles = run_byte_workflow(sector=sector)
-        articles.to_excel("lucas_prompt_testing/input_output/summarisation_test_output.xlsx")
+        articles.to_excel("input_output/articles_output.xlsx", index=False)
 
 if __name__ == "__main__":
     main()

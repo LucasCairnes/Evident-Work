@@ -1,7 +1,6 @@
 from google import genai
 from google.genai import types
 
-
 # ---- Gemini Summariser ----
 class GeminiArticleSummariser:
     def __init__(self,
