@@ -17,7 +17,7 @@ def main():
         articles = run_byte_workflow(sector=sector)
         
         # outputting to local file rather than to BQ
-        timestamp = datetime.now().strftime("%b%d_%H%M")
+        timestamp = datetime.now().strftime("%b%d_%H%M").lower()
         articles.to_excel(f"input_output/articles_output_{timestamp}.xlsx", index=False)
 
 if __name__ == "__main__":
