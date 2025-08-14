@@ -23,6 +23,7 @@ class ByteSummarisation(object):
 
     def trigger_workflow(self):
 
+        # importing articles from excel sheet instead
         articles = pd.read_excel("input_output/articles_input.xlsx", dtype={"date_published": str})
 
         print(f"Number Of Articles: {articles.shape[0]}")

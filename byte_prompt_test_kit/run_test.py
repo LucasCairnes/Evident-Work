@@ -10,10 +10,11 @@ def run_byte_workflow(sector):
     return articles
 
 def main():
-    sectors = ["Index Bank"] # only doing banking for now
+    sectors = ["Index Bank"] 
     
     for sector in sectors:
         articles = run_byte_workflow(sector=sector)
+        # outputting to local file rather than to BQ
         articles.to_excel("input_output/articles_output.xlsx", index=False)
 
 if __name__ == "__main__":
