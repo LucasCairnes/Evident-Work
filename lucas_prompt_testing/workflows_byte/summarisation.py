@@ -39,10 +39,8 @@ class ByteSummarisation(object):
         articles['summary'] = summaries
     
         # Ensure proper dtypes before upload
-        articles["company_id"] = pd.to_numeric(articles["company_id"], errors="coerce")  # Converts to float64 or int
         articles["dateTimePub"] = pd.to_datetime(articles["dateTimePub"], errors="coerce")
-        articles["datePub"] = articles["dateTimePub"].dt.date
         articles["run_datetime"] = pd.to_datetime(articles["run_datetime"], errors="coerce")
         # reorder cols 
-        articles = articles[["id", "company_id", "sector", "source_name", "pillar", "url", "title", "body", "summary", "datePub", "dateTimePub", "run_datetime"]]
+        articles = articles[["temp_id", "url", "title", "body", "source_name", "dateTimePub", "pillar"]]
         return articles
