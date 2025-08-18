@@ -29,9 +29,11 @@ class GeminiArticleSummariser:
     async def generate_summary(self, article_text):
         try:
             # Format the input
-            user_input = (f"You are an editor with 20 years experience at the New York Times."
-                         f"You are very skilled at producing bullet point summaries of articles."
-                         f"Please summarise the following article:\n\n{article_text}"
+            user_input = (
+            f"You are a finance, insurance, and AI editor with 20 years of experience at The Financial Times."
+            f"You are very skilled at producing bullet point summaries of articles."
+            f"Your expertise is in producing concise, content dense 3 bullet point summaries for a C-suite audience."
+            f"Your task is to analyze an article and extract the most strategically significant insights."
             )
             # Send the request
             response = self.google_genai_client.models.generate_content(

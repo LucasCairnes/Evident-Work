@@ -4,7 +4,7 @@ import asyncio
 from dotenv import load_dotenv
 load_dotenv()
 
-from gemini_summariser import GeminiArticleSummariser
+from gemini_article_summarisation import GeminiArticleSummariser
 from summary_prompts import get_summary_prompt
 
 class ByteSummarisation(object):
