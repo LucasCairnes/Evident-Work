@@ -1,9 +1,9 @@
 
 ###### sector specific examples of summarised articles ######
 
-banking_example_summaries = [
+banking_summaries = [
 """
-   <article1> Banks have become more willing to lend to people who don't meet traditional underwriting criteria, with the help of so-called alternative data and artificial intelligence. Two cases in point: U.S. Bank, which revealed today that it has made 2,000 such loans in a matter of months with fintech partner Pagaya, and Suncoast Credit Union, which has been working with Zest AI to lend to underserved communities.
+   <article> Banks have become more willing to lend to people who don't meet traditional underwriting criteria, with the help of so-called alternative data and artificial intelligence. Two cases in point: U.S. Bank, which revealed today that it has made 2,000 such loans in a matter of months with fintech partner Pagaya, and Suncoast Credit Union, which has been working with Zest AI to lend to underserved communities.
    At U.S. Bank in Minneapolis, which has $587 billion in assets, the aim is to deepen relationships with existing clients by giving them unsecured personal loans. """"We continue to see that there is a segment that we have not been able to serve through traditional credit underwriting,"""" said Mike Shepard, head of consumer lending, in an interview. """"We don't want to force that consumer to have to go outside of our four walls to get that. They trust us with their deposit account; they trust us with other solutions. How do we then continue to be on that journey with them through their financial life?""""
    These borrowers don't qualify under traditional loan underwriting methods for different reasons, he said. For instance, some have low credit scores. The 2,000 customers to whom U.S. Bank has granted loans through the Pagaya partnership are all long-term, established U.S. Bank customers. """"They have multiple products with us, so they trust us with those, and now we've been able to deliver the 'yes' message as opposed to a 'no' when they came to us looking for a personal loan,"""" Shepard said.
    Among all borrowers for whom Pagaya facilitates loans for its 29 bank partners, 50% have a credit score above 660, according to Leslie Gillin, chief growth officer at Pagaya. About half have low to moderate income and half are women. About 35% are Black and Latinx. """"All banks have that mandate to bring more Black and Latinx consumers into the mainstream economy and make sure that more deserving consumers are able to get credit access,"""" Gillin said.
@@ -17,13 +17,13 @@ banking_example_summaries = [
    Where traditional credit models are built using logistic regression, which can accommodate 15 to 20 variables, a machine learning model can analyze 500 data points, Zest AI CEO Mike de Vere said.
    At Suncoast Federal Credit Union, Johnson points out that there's a big difference between a 620 FICO score that's on its way up and a 620 that's on its way down. """"If I just look at a score, I don't understand that,"""" she said. """"I have to go beyond just the score and then I have to consider, why is it the way it is and what is their condition today?"""" The credit union is considering using credit bureau data on cell phone bill, rent and utility payments in loan decisions.
    Bank regulators, including Rohit Chopra, director of the Consumer Financial Protection Bureau, that when banks use AI in their lending decisions, the models can't be a """"black box;"""" they must be explainable, transparent, fair and free of bias. U.S. Bank applies model risk governance, monitoring and tracking to its own and its partners' models, Shepard said. Pagaya's models have to pass the same model validation that banks' internal models would have to pass, Gillin said. """"We like to think of ourselves as a glass box instead of a black box,"""" she said. """"Our model goes through the same fair lending testing that U.S. Bank's models do. So there's a lot of transparency.""""
-   Banks and fintechs that use AI in lending decisions say their models are more transparent, explainable and fair than traditional models and FICO scores. Suncoast, which is a state-chartered credit union, has been examined several times by Florida's Office of Financial Regulation since it deployed the Zest software. """"We have the reporting, the monitoring, the tracking, we have it outlined in terms of how we address fair lending and we're able to provide whatever documentation our examiners look for, and they have not taken issue with it,"""" Johnson said. </article1>
+   Banks and fintechs that use AI in lending decisions say their models are more transparent, explainable and fair than traditional models and FICO scores. Suncoast, which is a state-chartered credit union, has been examined several times by Florida's Office of Financial Regulation since it deployed the Zest software. """"We have the reporting, the monitoring, the tracking, we have it outlined in terms of how we address fair lending and we're able to provide whatever documentation our examiners look for, and they have not taken issue with it,"""" Johnson said. </article>
 
-   <summary1> •U.S. Bank, which revealed today that it has made 2,000 such loans in a matter of months with fintech partner Pagaya, and Suncoast Credit Union, which has been working with Zest AI to lend to underserved communities.
+   <summary> •U.S. Bank, which revealed today that it has made 2,000 such loans in a matter of months with fintech partner Pagaya, and Suncoast Credit Union, which has been working with Zest AI to lend to underserved communities.
    •The bank deployed Zest AI software a couple of years ago. It takes the more basic decisions away from the human loan analysts, giving them more time in the day to concentrate on the most challenging applications, looking for opportunities to serve members and offer coaching and counseling, Johnson said.
-   •When U.S. Bank runs a loan application through its usual underwriting model and gets a decline, it immediately and automatically sends the application to Pagaya, which runs it through its AI-based model. </summary1>
+   •When U.S. Bank runs a loan application through its usual underwriting model and gets a decline, it immediately and automatically sends the application to Pagaya, which runs it through its AI-based model. </summary>
 
-   <article2> The assessment of credit risk demands a great deal of manual effort. A discussion with Simone Mensink (Director of Banking at IG&H) and Hein Wegdam (Head of ING Real Estate) on the credit assessment of the future, which combines expert knowledge with artificial intelligence.
+   <article> The assessment of credit risk demands a great deal of manual effort. A discussion with Simone Mensink (Director of Banking at IG&H) and Hein Wegdam (Head of ING Real Estate) on the credit assessment of the future, which combines expert knowledge with artificial intelligence.
    At banks, the asset-based finance department often deals with credit checks high in complexity. The department deals with both low-risk and high-risk customer profiles that require a lot of manual handling.
    In recent years, several financial institutions started using ‘rule-based’ decision trees to process credit checks more efficiently. These trees are automated for the most part and are run to determine whether a credit request will be granted.
    But, defining the details per rule and upkeep of the system are very labor-intensive. Wegdam: “The rule-based model became too complex over time. The many rules made maintenance difficult, and subtle patterns were not recognized, ultimately making the results less accurate.”
@@ -36,22 +36,22 @@ banking_example_summaries = [
    Cooperation between the Front Office and Risk Management departments is crucial. By taking ownership of the model, the Risk Management department can play a leading role in adoption within the organization. “The company’s data scientists themselves will need to be involved to work with the model, but also to be able to check and adjust it,” explained Mensink.
    “At ING we did so by working together on the design and content of the model so that the process provides transparency and grows trust. If employees are comfortable and open to experiencing this way of working for themselves, success will follow.” </article2>
 
-   <summary2> •The assessment of credit risk demands a great deal of manual effort. A discussion with Simone Mensink (Director of Banking at IG&H) and Hein Wegdam (Head of ING Real Estate) on the credit assessment of the future, which combines expert knowledge with artificial intelligence.
+   <summary> •The assessment of credit risk demands a great deal of manual effort. A discussion with Simone Mensink (Director of Banking at IG&H) and Hein Wegdam (Head of ING Real Estate) on the credit assessment of the future, which combines expert knowledge with artificial intelligence.
    •At banks, the asset-based finance department often deals with credit checks high in complexity. The department deals with both low-risk and high-risk customer profiles that require a lot of manual handling.
-   •Pointing at a practical example, Wegdam said: “Together with the data science team of IG&H we developed unique decision models for the real estate financing market for loan reviews, extensions and applications. 80% of reviews and 50% of loan extensions were automated. We create added value by using our real estate financing knowledge where specific expertise is needed, like risk exceptions.” </summary2>
+   •Pointing at a practical example, Wegdam said: “Together with the data science team of IG&H we developed unique decision models for the real estate financing market for loan reviews, extensions and applications. 80% of reviews and 50% of loan extensions were automated. We create added value by using our real estate financing knowledge where specific expertise is needed, like risk exceptions.” </summary>
 
-   <article3> Commonwealth Bank created 50-plus generative AI use cases using a safe environment it set up for experimentation in May last year. The bank revealed the large-scale growth and usage in ancillary slides accompanying its half-year results presentation, though did not directly address the success. CBA said that it had practiced “responsible scaling of AI, resulting in [the] 50-plus generative AI use cases to simplify operational processes and support our frontline to serve customers” materialising between June and November last year.
+   <article> Commonwealth Bank created 50-plus generative AI use cases using a safe environment it set up for experimentation in May last year. The bank revealed the large-scale growth and usage in ancillary slides accompanying its half-year results presentation, though did not directly address the success. CBA said that it had practiced “responsible scaling of AI, resulting in [the] 50-plus generative AI use cases to simplify operational processes and support our frontline to serve customers” materialising between June and November last year.
    These use cases, it said, were generated out of CommBank Gen.ai Studio, an H2O.ai powered environment aimed at enabling safe experimentation with large language models (LLMs). The bank said it had also “upskilled over 500 staff on AI tools to democratise the responsible use of AI”.
    In addition, CBA suggested that generative AI is enabling it to experiment more with its long-running next best conversation (NBC) engine, known as the customer engagement engine or CEE. The CEE is used to personalise conversations and offers to customers - CEO Matt Comyn told financial analysts that, for example, the bank had recently used CEE to make “personalised pricing offers” to home loan customers coming off a fixed-rate loan. Though somewhat cryptic, CBA indicated it had seen a “30x increase in experimentation capability within an NBC compared to [the] current CEE A/B testing framework with GenAI.” iTnews has contacted a CBA spokesperson to clarify the findings.
    CBA said that continued insourcing of IT capabilities and cloud contributed to higher operating expenses in the back half of last year, but these were “more than offset” by productivity benefits. The company’s half-year results for the six months ended December 30 showed a familiar pattern of IT and cloud’s contribution to the bank’s operating expenses.
    CFO Alan Docherty noted the pattern of expenses and suggested it would continue into the second half of the financial year, and potentially beyond. Operating expenses in total were up 4.1 percent on the prior corresponding half-year, from $5.7 billion to $6 billion, “driven by inflation and increased technology spend”, CEO Matt Comyn said. Docherty attributed the increase “largely… [to] inflationary increases in wages and supplier input costs.” “We continued to invest strongly in our technology capabilities, the digitisation agenda, and in other areas such as cloud computing and scam prevention,” he said, adding that “growth in these costs were more than offset by ongoing business simplification and productivity benefits.”
    Some of the wage costs came as a result of continued insourcing of IT capability that previously sat with contractors. “We’re continuing with the program of insourcing of technology capability, so within the staff and IT lines there’s still an element of additional staff costs which are displacing some third-party contractor costs which historically would have emerged in the technology line,” Docherty said. Software amortisation costs were also a contributor.
-   CBA reported a cash net profit after tax of $5 billion for the first half of the financial year, down three percent compared to the previous corresponding half. </article3>
+   CBA reported a cash net profit after tax of $5 billion for the first half of the financial year, down three percent compared to the previous corresponding half. </article>
 
-   <summary3> •CBA said that it had practiced “responsible scaling of AI, resulting in [the] 50-plus generative AI use cases to simplify operational processes and support our frontline to serve customers” materialising between June and November last year.
+   <summary> •CBA said that it had practiced “responsible scaling of AI, resulting in [the] 50-plus generative AI use cases to simplify operational processes and support our frontline to serve customers” materialising between June and November last year.
    •These use cases, it said, were generated out of CommBank Gen.ai Studio, an H2O.ai powered environment aimed at enabling safe experimentation with large language models (LLMs).
    •In addition, CBA suggested that generative AI is enabling it to experiment more with its long-running next best conversation (NBC) engine, known as the customer engagement engine or CEE.
-   •Though somewhat cryptic, CBA indicated it had seen a “30x increase in experimentation capability within an NBC compared to [the] current CEE A/B testing framework with GenAI.” </summary3>"
+   •Though somewhat cryptic, CBA indicated it had seen a “30x increase in experimentation capability within an NBC compared to [the] current CEE A/B testing framework with GenAI.” </summary>"
 """
 ]
 
@@ -77,13 +77,13 @@ insurance_example_summaries = [
 </example>
    """
 ]
-
+'''
 #TODO: add to documentation for maintenance
 example_summaries_lookup = {
-    "Index Bank": banking_example_summaries,
+    #"Index Bank": banking_example_summaries,
     "Index Insurance": insurance_example_summaries,
 }
-
+'''
 def get_summary_prompt(sector):
 
    """
@@ -92,52 +92,41 @@ def get_summary_prompt(sector):
     This function retrieves example summaries for the given sector and uses them to 
     generate a detailed prompt.
    """
+   '''
    if sector not in example_summaries_lookup:
         raise ValueError(f"Sector '{sector}' not found in example_summaries_lookup. Available sectors: {list(example_summaries_lookup.keys())}")
    example_summaries = example_summaries_lookup[sector]
-   example_summaries = "\n".join([example.strip() for example in example_summaries])
+   example_summaries = "\n".join([example.strip() for example in example_summaries]) '''
 
    prompt =f"""
+   Step 1: Information Extraction Focus
+   As you analyze the article, your primary goal is to extract information related to AI within the {sector} sector. Focus on these specific categories:
+   * **Initiatives & Adoption:** AI projects or strategies being implemented by {sector} organizations.
+   * **Talent & Training:** The hiring of AI specialists or the rollout of AI training programs for employees in {sector}.
+   * **Practical Applications:** Specific use cases of AI technology within the {sector} sector.
+   * **Ecosystem:** AI startups providing services to the {sector} sector, or regulations impacting AI in {sector}'.
+   * **Other Relevant Points:** Any other significant information connecting AI and {sector}.
+   * **Fallback:** If the article lacks specific details about AI in {sector}, summarize the article's general points about AI.
 
-   Your primary audience is a consultant providing AI services to major {sector} companies. The summary must equip them with the critical information needed to advise their clients effectively.
-   You are tasked with summarizing an article about AI use in the {sector} sector. When producing your summaries, make sure to think through the process step by step. Your summary should be in the form of concise bullet points.
-   Here is the process to follow:
-   
-   1. First, carefully read the following article:
-      <article>
-      {{}}
-      </article>
+   Step 2: Style Emulation
+   Before writing, review the provided high-quality summaries. Your output should replicate their tone, density, and writing pattern.
+   {banking_summaries}
 
-   2. As you analyze the article, focus on extracting information from these key areas:
-      o AI initiatives by {sector} companies, {sector} institutions, {sector} providors
-      o Hiring of AI specialists by {sector} companies
-      o Specific AI use cases in the {sector} sector
-      o AI training programs for employess in the {sector} sector
-      o AI regulations in the {sector} sector
-      o AI startups providing services to {sector} institutions
-      o Any other information relevant to AI in {sector}
-      o If there is absolutely nothing directly relevant to AI in {sector}, you can summarise the general AI points in the article
+   Step 3: Summary Construction Rules
+   Create the final bulleted summary adhering to these strict rules:
+   * **Inverted Pyramid Structure:** Arrange the bullet points by importance. The first bullet must contain the single most critical or impactful finding from the article. Subsequent bullet points should cover details of decreasing significance.
+   * **Quantity:** Aim for 3 high-quality bullet points. You may only use more if the article contains several distinct and highly relevant points that cannot be logically combined.
+   * **Quality:** Make each bullet point concise, informative, and direct.
+   * **Data-Driven:** Whenever possible, include specific facts and figures to quantify impact (e.g., percentages, financial data, or other concrete metrics).
+   * **Quotes:** If there are noteworthy quotes, embed them word-for-word within the relevant bullet point.
 
-   3. Before writing, review these high-quality examples of summaries. Replicate their tone, density, and writing pattern.
-      {example_summaries}
-
-   4. Create the final bullet point summary using the following strict guidelines:
-      o Use the • symbol to denote each bullet point
-      o Start each bullet point on a new line
-      o Do not leave empty lines between bullet points
-      o Aim for 3 high-quality bullet points. You may include more only if the article contains several distinct, highly relevant points that cannot be combined.
-      o Make the bullet points concise, informative, and straight to the point.
-      o Whenever possible, include specific facts and figures to quantify the impact of AI initiatives, such as percentages, financial numbers, or other concrete metrics mentioned.
-      o If there are noteworthy quotes, include them word-for-word within the relevant bullet point
-
-   IMPORTANT: You must only provide the bullet point summary. Do not include any introductory or concluding prose, such as "Here is the summary:" or any other conversational text.
-
-   5. Present your summary in the following format:
-      • [First bullet point]
-      • [Second bullet point]
-      • [Third bullet point]
+   Step 4: Final Output Formatting
+   Present your summary using the following format precisely:
+   * **Inverted Pyramid Structure:** Arrange the bullet points by importance. The first bullet must contain the single most critical or impactful finding from the article. Subsequent bullet points should cover details of decreasing significance.
+   * Use the • symbol to begin each bullet point.
+   * Start each bullet point on a new line.
+   * **IMPORTANT** Do not leave empty lines between bullet points.
+   * Your response must *only* be the bullet point summary. Do not include any introductory or concluding text like "Here is the summary:" or any other conversational filler.
    """
+
    return prompt
-
-
-SYSTEM_PROMPT = "You are a seasoned editor with 20 years of experience at The Financial Times, specializing in finance, insurance, and AI, tasked with producing concise, three-bullet-point summaries of articles for a C-suite audience."

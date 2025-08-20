@@ -9,15 +9,17 @@ from summary_prompts import get_summary_prompt
 
 class ByteSummarisation(object):
     def __init__(self,
-                 sector: Literal["Index Bank", "Insurance1000", "Index Insurance", "Payments", "Index1000", "Other"],                 test_run=False,
+                 sector: Literal["Index Bank", "Insurance1000", "Index Insurance", "Payments", "Index1000", "Other"],
+                 test_run=False,
                  ):
         
         self.sector = sector
-        self.test_run = test_run  
+        self.test_run = test_run
+        self.project_id = 'evident-data-dev'
     
     async def summarise(self, articles):
-        summariser = GeminiArticleSummariser(summarisation_prompt=get_summary_prompt(self.sector))
-        coroutines = [summariser.generate_summary(text) for text in articles.body.values]
+        summariser = GeminiArticleSummariser(summarisation_prompt=get_summary_prompt(self.sector), project_id=self.project_id)
+        coroutines = [summariser.generate_summary(article_text=text) for text in articles.body.values]
         summaries = await asyncio.gather(*coroutines)
         return summaries
 

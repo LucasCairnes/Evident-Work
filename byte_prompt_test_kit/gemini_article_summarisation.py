@@ -5,7 +5,7 @@ from google.genai import types
 class GeminiArticleSummariser:
     def __init__(self,
                  summarisation_prompt,
-                 model_name = "google/gemini-2.0-flash-001",
+                 model_name = "google/gemini-2.5-pro",
                  project_id=None):
         self.summarisation_prompt = summarisation_prompt
         self.model_name = model_name
@@ -23,27 +23,27 @@ class GeminiArticleSummariser:
         self.model_configuration = types.GenerateContentConfig(
             system_instruction=summarisation_prompt,
             response_mime_type="text/plain",
-            max_output_tokens=500
+            max_output_tokens=20000
         )
 
     async def generate_summary(self, article_text):
         try:
             # Format the input
-            user_input = (
-            f"You are a finance, insurance, and AI editor with 20 years of experience at The Financial Times."
-            f"You are very skilled at producing bullet point summaries of articles."
-            f"Your expertise is in producing concise, content dense 3 bullet point summaries for a C-suite audience."
-            f"Your task is to analyze an article and extract the most strategically significant insights."
+            user_input = (f"You are an editor with 20 years experience at the New York Times."
+                         f"You are very skilled at producing bullet point summaries of articles."
+                         f"Please summarise the following article using the instructions below:\n\n<article>{article_text}</article>"
             )
             # Send the request
-            response = self.google_genai_client.models.generate_content(
+            response = await self.google_genai_client.aio.models.generate_content(
                 model=self.model_name,
                 config=self.model_configuration,
                 contents=[{"role": "user", "parts": [{"text": user_input}]}],
             )
 
             # Extract response
+            print(f"Response: {response}")
             summary = response.candidates[0].content.parts[0].text
+        
             return summary.strip()
 
         except Exception as e:
