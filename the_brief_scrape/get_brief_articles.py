@@ -3,9 +3,6 @@ import httpx
 from bs4 import BeautifulSoup
 import pandas as pd
 
-import gspread
-
-
 base_url = "https://evidentinsights.com"
 sub_section = "/bankingbrief/"
 
