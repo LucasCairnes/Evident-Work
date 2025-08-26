@@ -43,7 +43,7 @@ async def main(links):
         async with semaphore:
             return await fetch_article_text(client, link)
 
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(timeout=30.0) as client:
 
         tasks = [fetch_with_semaphore(client, link) for link in links]
         results = await asyncio.gather(*tasks)
@@ -51,11 +51,10 @@ async def main(links):
         combined_data = dict(zip(links, results))
         return combined_data
 
-if __name__ == "__main__":
+def run_scrape():
     article_links = get_article_links()
-    
     fetched_articles_map = asyncio.run(main(article_links))
-    
-    df = pd.DataFrame(fetched_articles_map.items(), columns=['link', 'content'])
+    return pd.DataFrame(fetched_articles_map.items(), columns=['link', 'content'])
 
-df.to_excel("brief_editions_with_articles.xlsx", index=False)
+if __name__ == "__main__":
+    articles_df = run_scrape()
